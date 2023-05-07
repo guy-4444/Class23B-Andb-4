@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="16dp"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="40dp"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/property_IMG_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_mock_property"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/property_IMG_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/img_mock_property_2"
+                    android:scaleType="centerCrop"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#FFFFFF"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/property_IMG_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/img_mock_property3"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/property_LBL_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:textSize="16sp"
+                android:text="desc"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/property_LBL_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:text="location"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/property_LBL_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:text="status"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/property_LBL_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:text="year"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/property_LBL_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:textSize="14sp"
+                android:text="price"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>
